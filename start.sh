@@ -10,4 +10,5 @@ c) CPU=${OPTARG};;
 esac
 done
 
+echo ${WALLET}
 UV_THREADPOOL_SIZE=${CPU} ./miner --wallet-address=${WALLET} --pool={POOL} --miner={CPU} --in-memory
