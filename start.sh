@@ -11,4 +11,4 @@ esac
 done
 
 echo ${WALLET}
-UV_THREADPOOL_SIZE=${CPU} ./miner --wallet-address=${WALLET} --pool={POOL} --miner={CPU} --in-memory
+UV_THREADPOOL_SIZE=${CPU} ./miner --wallet-address="$WALLET" --pool={POOL} --miner={CPU} --in-memory
