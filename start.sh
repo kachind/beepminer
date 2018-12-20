@@ -10,6 +10,8 @@ c) CPU=${OPTARG};;
 esac
 done
 
+echo "$CPU"
+
 if [ "$CPU" -eq 0 ];then
   CPU=$((`getconf _NPROCESSORS_ONLN`/4))
 fi
